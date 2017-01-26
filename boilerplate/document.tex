@@ -1,0 +1,83 @@
+\documentclass[parskip=half,%
+fontsize=11pt,% Schriftgröße
+% paper=a4,% Papierformat
+fromphone=true,% (false)
+% fromfax=false/true
+% fromurl=false/true
+% fromlogo=false/true
+% fromrule=off/on % Linie im Absender abschalten
+% fromalign=left/center/right % Ausrichtung im Briefkopf
+% addrfield=on % Adressfeld für Fensterkuverts
+% backaddress=on % Absender im Fensterfeld
+% foldmarks=false,% Falz- und Lochermarkierungen unterdrücken
+% pagenumber=Wert % Seitenzahl ausrichten: "no"=keine Seitenzahlen ausgeben
+% headsepline=on % Linie unter der Seitenzahl
+% parskip=Wert % Abstand zwischen Absaetzen: "full" = neuen Absatz nicht einrücken und eine Zeile Abstand zwischen zwei Absätzen; "half" = neuen Absatz nicht einrücken und eine halbe Zeile Abstand zwischen zwei Absätzen; "false" = neue Absätze einrücken und keinen erweiterten Zwischenraum frei lassen
+fromemail=true
+]{scrlttr2}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[osf]{libertine}
+\usepackage{microtype}
+
+%%%%%Absenderangaben%%%%%
+
+\setkomavar{fromname}{Ich}
+\setkomavar{fromaddress}{%
+  Hauptstraße 123 \\
+  12345 Astadt
+}
+\setkomavar{fromphone}{+123~456~789}
+% \setkomavar*{fromphone}{Handy: } %ändert "Telefon" zu "Handy"
+\setkomavar{fromemail}{ich@example.com}
+\setkomavar{backaddressseparator}{ $\cdot$ }
+\setkomavar{signature}{Ich}
+%neue Werte generieren:
+%%\newkomavar*[Steuernummer]{stnr}
+%%\setkomavar{stnr}{Bla}
+
+\setkomafont{fromname}{\sffamily\LARGE}
+\setkomafont{fromaddress}{\sffamily}
+\setkomafont{pagenumber}{\sffamily}
+
+%%%%%Geschäftszeichen-Zeile%%%%%
+
+%\setkomavar{yourref}{} % Ihr Zeichen
+%\setkomavar{yourmail}{} % Ihre Nachricht vom
+%\setkomavar{myref}{} % Unser Zeichen
+%\setkomavar{costumer}{} % Kundennummer
+%\setkomavar{invoice}{} % Rechnungsnummer
+\setkomavar{date}{Astadt, \today} % Datum
+%neue Werte generieren:
+%%\newkomavar*[Mitgliedernummer]{mtglnr}
+%%\setkomavar{mtglnr}{Bla}
+
+%%%%%Anlage neu definieren%%%%%
+
+\setkomavar{enclseparator}{: }
+
+\begin{document}
+
+\begin{letter}{\sffamily\large{
+  Empfänger \\
+  Straße 456 \\
+  54321 Berlin
+}}
+
+\setkomavar{subject}{Eine wichtige Mitteilung für Sie}
+
+\opening{Sehr geehrte Damen und Herren,}
+
+\dots
+
+\closing{Mit freundlichen Grüßen}
+
+%\ps{PS: }
+% \encl{Anlage 1 \\ Anlage 2}
+%\cc{} %Verteiler
+
+\end{letter}
+
+\end{document}
