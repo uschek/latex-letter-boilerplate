@@ -4,7 +4,7 @@
 
 ![preview](preview.png)
 
-This contains a [`document.tex`](boilerplate/main.tex) and a [`Makefile`](boilerplate/Makefile) for easier use of `latexmk`.
+This contains a [`document.tex`](boilerplate/document.tex) and a [`Makefile`](boilerplate/Makefile) for easier use of `latexmk`.
 
 
 ## Getting started
