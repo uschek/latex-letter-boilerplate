@@ -22,6 +22,11 @@ $ make
 ```
 
 
+## Credits
+
+This is a slightly modified version of `Vorlage_scrlttr2.tex`, found at [Teuderun](https://www.teuderun.de/latex/vorlagen-downloads/vorlagen-latex/).
+
+
 ## License
 
 MIT © [Christoph Uschkrat](https://c.uschkrat.com)
